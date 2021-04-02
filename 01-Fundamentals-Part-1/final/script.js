@@ -136,7 +136,7 @@ GOOD LUCK 😀
 // const massJohn = 92;
 // const heightJohn = 1.95;
 
-/*
+
 const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
@@ -147,7 +147,7 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
-
+/*
 ////////////////////////////////////
 // Strings and Template Literals
 const firstName = 'Jonas';
@@ -192,7 +192,7 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/
+* /
 
 ////////////////////////////////////
 // Coding Challenge #2

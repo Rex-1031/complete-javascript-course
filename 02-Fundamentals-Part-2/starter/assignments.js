@@ -35,23 +35,23 @@ LECTURE: Function Declarations vs. Expressions
     the world population.
 */
 
-function percentageOfWorld1(population) {
-    return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
 
-const percentageOfWorld2 = function (population) {
-    return (population / 7900) * 100;
-}
+// const percentageOfWorld2 = function (population) {
+//     return (population / 7900) * 100;
+// }
 
-let usaPopulation = percentageOfWorld1(328);
-
-
-let chinaPopulation = percentageOfWorld1(1441);
+// let usaPopulation = percentageOfWorld1(328);
 
 
-let canadaPopulation = percentageOfWorld1(37)
+// let chinaPopulation = percentageOfWorld1(1441);
 
-console.log(usaPopulation, chinaPopulation, canadaPopulation);
+
+// let canadaPopulation = percentageOfWorld1(37)
+
+// console.log(usaPopulation, chinaPopulation, canadaPopulation);
 
 
 /*
@@ -86,6 +86,9 @@ LECTURE: Functions Calling Other Functions
 
     3. Call 'describePopulation' with data for 3 countries of your choice.
 
+
+
+    
 LECTURE: Introduction to Arrays
     1. Create an array containing 4 population values of 4 countries of your choice.
     You may use the values you have been using previously. Store this array into a

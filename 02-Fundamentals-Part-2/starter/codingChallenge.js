@@ -29,8 +29,10 @@ Hints:
 § To calculate average of 3 values, add them all together and divide by 3
 § To check if number A is at least double number B, check for A >= 2 * B.
 Apply this to the team's average scores 😉
+*/
 
 
+/* 
 Coding Challenge #2
 Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 the bill if the bill value is between 50 and 300, and if the value is different, the tip is

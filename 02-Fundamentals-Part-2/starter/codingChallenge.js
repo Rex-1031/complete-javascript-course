@@ -22,8 +22,6 @@ let dolphinAv2 = calcAverage(85, 54, 41);
 let koalaAv2 = calcAverage(23, 34, 27);
 
 
-// console.log(`Dolphin's average: ${dolphinAv}
-//         Koala's average: ${koalaAv}`);
 
 // 3. Create a function 'checkWinner' that takes the average score of each team
 // as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner

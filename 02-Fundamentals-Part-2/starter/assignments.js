@@ -39,17 +39,17 @@ function percentageOfWorld1(population) {
     return (population / 7900) * 100;
 }
 
-const percentageOfWorld2 = function (population) {
-    return (population / 7900) * 100;
-}
+// const percentageOfWorld2 = function (population) {
+//     return (population / 7900) * 100;
+// }
 
-let usaPopulation = percentageOfWorld1(328);
-
-
-let chinaPopulation = percentageOfWorld1(1441);
+// let usaPopulation = percentageOfWorld1(328);
 
 
-let canadaPopulation = percentageOfWorld1(37)
+// let chinaPopulation = percentageOfWorld1(1441);
+
+
+// let canadaPopulation = percentageOfWorld1(37)
 
 console.log('percentageOfWorld1: ', usaPopulation, chinaPopulation, canadaPopulation);
 
@@ -130,7 +130,25 @@ LECTURE: Introduction to Arrays
     world population for these 4 population values. Use the function
     'percentageOfWorld1' that you created earlier to compute the 4
     percentage values
+*/
 
+const populations = [6, 328, 1441, 37]
+console.log('Assignment 1: Array of populations (in millions). ', populations)
+
+console.log('Assignment 2: Does the array have for elements? ', populations.length === 4)
+
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+]
+
+console.log('Assignment 3: Population percentages. ', percentages)
+
+
+
+/*
 LECTURE: Basic Array Operations (Methods)
     1. Create an array containing all the neighbouring countries of a country of your
     choice. Choose a country which has at least 2 or 3 neighbours. Store the array

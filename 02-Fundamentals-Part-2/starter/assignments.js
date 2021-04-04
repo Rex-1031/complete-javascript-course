@@ -35,9 +35,9 @@ LECTURE: Function Declarations vs. Expressions
     the world population.
 */
 
-// function percentageOfWorld1(population) {
-//     return (population / 7900) * 100;
-// }
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+}
 
 // const percentageOfWorld2 = function (population) {
 //     return (population / 7900) * 100;
@@ -86,9 +86,9 @@ LECTURE: Functions Calling Other Functions
 
     3. Call 'describePopulation' with data for 3 countries of your choice.
 
+*/
 
-
-    
+/*    
 LECTURE: Introduction to Arrays
     1. Create an array containing 4 population values of 4 countries of your choice.
     You may use the values you have been using previously. Store this array into a
@@ -100,7 +100,25 @@ LECTURE: Introduction to Arrays
     world population for these 4 population values. Use the function
     'percentageOfWorld1' that you created earlier to compute the 4
     percentage values
+*/
 
+        const populations = [6, 328, 1441, 37]
+        console.log('Assignment 1: Array of populations (in millions). ', populations)
+
+        console.log('Assignment 2: Does the array have for elements? ',populations.length === 4)
+
+        const percentages =[
+            percentageOfWorld1(populations[0]), 
+            percentageOfWorld1(populations[1]), 
+            percentageOfWorld1(populations[2]), 
+            percentageOfWorld1(populations[3])
+        ]
+
+        console.log('Assignment 3: Population percentages. ', percentages)
+
+
+
+/*
 LECTURE: Basic Array Operations (Methods)
     1. Create an array containing all the neighbouring countries of a country of your
     choice. Choose a country which has at least 2 or 3 neighbours. Store the array

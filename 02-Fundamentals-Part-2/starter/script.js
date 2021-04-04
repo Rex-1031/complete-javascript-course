@@ -125,7 +125,55 @@
 
 // LECTURE: Introduction to Arrays
 
+
+// const calcAge = function(birthYear){
+//         return 2037 - birthYear
+//     }
+
+//     const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length -1]);
+
+
+// console.log(age1, age2, age3)
+
+// const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length -1]) ]
+
+// console.log(ages);
+
+
 // LECTURE: Basic Array Operations (Methods)
+
+const friends = ['Kitty', 'Brandi', 'Sam'];
+console.log(friends)
+//ADD ELEMENTS
+friends.push('Nick');
+
+
+console.log(friends)
+
+
+friends.unshift('Ty');
+console.log(friends)
+
+//REMOVE ELEMENTS
+
+friends.pop();
+friends.pop();
+
+console.log(friends)
+
+friends.shift();
+console.log(friends);
+
+
+console.log(friends.indexOf('Kitty'))
+
+console.log(friends.includes('Kitty'));
+console.log(friends.includes('Nick'))
+
 
 
 // LECTURE: Introduction to Objects

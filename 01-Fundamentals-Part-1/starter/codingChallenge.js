@@ -84,32 +84,32 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
-let dolphinScore1 = 97;
-let dolphinScore2 = 112;
-let dolphinScore3 = 101;
+// let dolphinScore1 = 97;
+// let dolphinScore2 = 112;
+// let dolphinScore3 = 101;
 
-let koalaScore1 = 109;
-let koalaScore2 = 95;
-let koalaScore3 = 106;
+// let koalaScore1 = 109;
+// let koalaScore2 = 95;
+// let koalaScore3 = 106;
 
-let dolphinScoreAv = ((dolphinScore1 + dolphinScore2 + dolphinScore3) / 3).toFixed();
-let koalaScoreAv = ((koalaScore1 + koalaScore2 + koalaScore3) / 3).toFixed();
+// let dolphinScoreAv = ((dolphinScore1 + dolphinScore2 + dolphinScore3) / 3).toFixed();
+// let koalaScoreAv = ((koalaScore1 + koalaScore2 + koalaScore3) / 3).toFixed();
 
-if (dolphinScoreAv > koalaScoreAv && dolphinScoreAv > 100) {
-    console.log(`The winner with a score of ${dolphinScoreAv} is the Dolphins!`)
-} else if (koalaScoreAv > dolphinScoreAv) {
-    console.log(`The winner with a score of ${koalaScoreAv} is the Koalas!`)
-} else if (dolphinScoreAv === koalaScoreAv) {
-    console.log(`Unfortunately there are no winners, both teams scored a tie of: ${koalaScoreAv}`)
-} else {
-    console.log(`       Unfortunately there are no winners, both teams failed to get above a 100 point average.
+// if (dolphinScoreAv > koalaScoreAv && dolphinScoreAv > 100) {
+//     console.log(`The winner with a score of ${dolphinScoreAv} is the Dolphins!`)
+// } else if (koalaScoreAv > dolphinScoreAv) {
+//     console.log(`The winner with a score of ${koalaScoreAv} is the Koalas!`)
+// } else if (dolphinScoreAv === koalaScoreAv) {
+//     console.log(`Unfortunately there are no winners, both teams scored a tie of: ${koalaScoreAv}`)
+// } else {
+//     console.log(`       Unfortunately there are no winners, both teams failed to get above a 100 point average.
 
-        Final Score:
-        Dolphins: ${dolphinScoreAv}
+//         Final Score:
+//         Dolphins: ${dolphinScoreAv}
 
-        Koalas: ${koalaScoreAv}
-    `)
-}
+//         Koalas: ${koalaScoreAv}
+//     `)
+// }
 
 
 /*

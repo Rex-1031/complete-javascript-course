@@ -5,32 +5,57 @@ gymnastics discipline, which works differently.
 Each team competes 3 times, and then the average of the 3 scores is calculated (so
 one average score per team).
 A team only wins if it has at least double the average score of the other team.
-Otherwise, no team wins!
+Otherwise, no team wins! */
 
-Your tasks:
-1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+// Your tasks:
+// 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 
-2. Use the function to calculate the average for both teams
+const calcAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3) / 3
+}
 
-3. Create a function 'checkWinner' that takes the average score of each team
-as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
-to the console, together with the victory points, according to the rule above.
-Example: "Koalas win (30 vs. 13)"
+// 2. Use the function to calculate the average for both teams
 
-4. Use the 'checkWinner' function to determine the winner for both Data 1 and
-Data 2
-
-5. Ignore draws this time
-
-Test data:
-§ Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
-§ Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
-Hints:
-§ To calculate average of 3 values, add them all together and divide by 3
-§ To check if number A is at least double number B, check for A >= 2 * B.
-Apply this to the team's average scores 😉
+let dolphinAv = calcAverage(44, 23, 71);
+let koalaAv = calcAverage(65, 54, 49);
+let dolphinAv2 = calcAverage(85, 54, 41);
+let koalaAv2 = calcAverage(23, 34, 27);
 
 
+// console.log(`Dolphin's average: ${dolphinAv}
+//         Koala's average: ${koalaAv}`);
+
+// 3. Create a function 'checkWinner' that takes the average score of each team
+// as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+// to the console, together with the victory points, according to the rule above.
+// Example: "Koalas win (30 vs. 13)"
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`)
+    } else {
+        console.log('No Winner');
+    }
+}
+
+console.log(checkWinner(dolphinAv, koalaAv));
+console.log(checkWinner(dolphinAv2, koalaAv2));
+// 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
+// Data 2
+
+// 5. Ignore draws this time
+
+// Test data:
+// § Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+// § Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+// Hints:
+// § To calculate average of 3 values, add them all together and divide by 3
+// § To check if number A is at least double number B, check for A >= 2 * B.
+// Apply this to the team's average scores 😉
+
+/*
 Coding Challenge #2
 Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 the bill if the bill value is between 50 and 300, and if the value is different, the tip is

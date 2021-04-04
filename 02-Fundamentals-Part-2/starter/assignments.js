@@ -51,9 +51,17 @@ let chinaPopulation = percentageOfWorld1(1441);
 
 let canadaPopulation = percentageOfWorld1(37)
 
-console.log(usaPopulation, chinaPopulation, canadaPopulation);
+console.log('percentageOfWorld1: ', usaPopulation, chinaPopulation, canadaPopulation);
+
+let usaPopulation2 = percentageOfWorld2(328);
 
 
+let chinaPopulation2 = percentageOfWorld2(1441);
+
+
+let canadaPopulation2 = percentageOfWorld2(37)
+
+console.log('percentageOfWorld2: ', usaPopulation2, chinaPopulation2, canadaPopulation2);
 /*
 
     2. To calculate the percentage, divide the given 'population' value by 7900
@@ -74,7 +82,23 @@ LECTURE: Arrow Functions
     1. Recreate the last assignment, but this time create an arrow function called
     'percentageOfWorld3'.
 
+*/
 
+const percentageOfWorld3 = population => { return (population / 7900) * 100; }
+
+let usaPopulation3 = percentageOfWorld3(328);
+
+
+let chinaPopulation3 = percentageOfWorld3(1441);
+
+
+let canadaPopulation3 = percentageOfWorld3(37);
+
+console.log('percentageOfWorld3: ', usaPopulation3, chinaPopulation3, canadaPopulation3)
+
+
+
+/*
 LECTURE: Functions Calling Other Functions
     1. Create a function called 'describePopulation'. Use the function type you
     like the most. This function takes in two arguments: 'country' and
@@ -85,7 +109,16 @@ LECTURE: Functions Calling Other Functions
     'percentageOfWorld1' you created earlier.
 
     3. Call 'describePopulation' with data for 3 countries of your choice.
+*/
+const describePopulation = (country, population) => {
+    console.log(`${country} has ${population} people,
+    which is about ${percentageOfWorld1(population).toFixed(2)}% of the world `)
+}
+console.log(describePopulation("The USA", 328))
+console.log(describePopulation("China", 1441))
+console.log(describePopulation("Canada", 37))
 
+/*
 LECTURE: Introduction to Arrays
     1. Create an array containing 4 population values of 4 countries of your choice.
     You may use the values you have been using previously. Store this array into a

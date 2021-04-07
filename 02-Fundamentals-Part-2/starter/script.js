@@ -104,7 +104,7 @@
 // const yearsUntilRetirement = function(birthYear, firstName){
 //     const age = calcAge(birthYear)
 //     const retirement = 65 - age; 
-    
+
 //     if (retirement > 0 ){
 //         console.log(`${firstName} retires in ${retirement} years`);
 //         return retirement;
@@ -112,7 +112,7 @@
 //         console.log(`${firstName} has already retired! `);
 //         return -1;
 //     }
-    
+
 // }
 
 // console.log(yearsUntilRetirement(1983, 'Steve'));
@@ -146,43 +146,118 @@
 
 // LECTURE: Basic Array Operations (Methods)
 
-const friends = ['Kitty', 'Brandi', 'Sam'];
-console.log(friends)
-//ADD ELEMENTS
-friends.push('Nick');
+// const friends = ['Kitty', 'Brandi', 'Sam'];
+// console.log(friends)
+// //ADD ELEMENTS
+// friends.push('Nick');
 
 
-console.log(friends)
+// console.log(friends)
 
 
-friends.unshift('Ty');
-console.log(friends)
+// friends.unshift('Ty');
+// console.log(friends)
 
-//REMOVE ELEMENTS
+// //REMOVE ELEMENTS
 
-friends.pop();
-friends.pop();
+// friends.pop();
+// friends.pop();
 
-console.log(friends)
+// console.log(friends)
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
 
-console.log(friends.indexOf('Kitty'))
+// console.log(friends.indexOf('Kitty'))
 
-console.log(friends.includes('Kitty'));
-console.log(friends.includes('Nick'))
+// console.log(friends.includes('Kitty'));
+// console.log(friends.includes('Nick'))
 
 
 
 // LECTURE: Introduction to Objects
+// const steve = {
+//     firstName: 'Steve',
+//     lastName: 'Clair',
+//     age: 2021 - 1983,
+//     job: 'Electronic Technician',
+//     friends: ['Kitty', 'Brandi', 'Sam']
+// }
 
+// console.log(steve)
 
 // LECTURE: Dot vs. Bracket Notation
 
+// console.log(steve.lastName);
+// console.log(steve['lastName'])
+
+// const nameKey = 'Name'
+
+// console.log(steve['first' + nameKey]);
+// console.log(steve['last' + nameKey])
+
+//Does not work with dot notation --> console.log(steve.'last' + nameKey);
+
+// const interestedIn = prompt('What to you want to know? Enter firstName,  lastName, age, job, friends, location, twitter, or bestFriend')
+// console.log(steve[interestedIn])
+
+// if (steve[interestedIn]) {
+//     console.log(steve[interestedIn])
+// } else {
+//     console.log('Wrong request input. Enter firstName lastName, age, job, or friends')
+// }
+
+// steve.location = 'NE Ohio';
+// steve['twitter'] = false;
+
+
+// //Challenge
+// // Steve has three friends, but  his best friend is Kitty.
+
+// let bestFriend = `${steve.firstName} has ${steve.friends.length} friends, but  his best friend is ${steve.friends[0]}`
+
+// console.log(bestFriend);
+
+
 
 // LECTURE: Object Methods
+
+const steve = {
+    firstName: 'Steve',
+    lastName: 'Clair',
+    birthYear: 1983,
+    currentYear: 2021,
+    job: 'Electronic Technician',
+    friends: ['Kitty', 'Brandi', 'Sam'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2021 - birthYear;
+    // }
+
+    // calcAge: function (birthYear) {
+    //     return this.currentYear - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2021 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he ${this.hasDriversLicense === true ? `has` : `does not have`} a driver's license.`
+    }
+}
+
+console.log(steve.calcAge())
+console.log(steve.age)
+
+//Challenge
+//'Steve is a 38 year old Electionic Technician, and he as/does not have  a driver's license'
+
+console.log(steve.getSummary())
+
 
 // LECTURE: Iteration: The for Loop
 

@@ -35,9 +35,9 @@ LECTURE: Function Declarations vs. Expressions
     the world population.
 */
 
-function percentageOfWorld1(population) {
-    return (population / 7900) * 100;
-}
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100;
+// }
 
 // const percentageOfWorld2 = function (population) {
 //     return (population / 7900) * 100;
@@ -51,29 +51,29 @@ function percentageOfWorld1(population) {
 
 // let canadaPopulation = percentageOfWorld1(37)
 
-console.log('percentageOfWorld1: ', usaPopulation, chinaPopulation, canadaPopulation);
+// console.log('percentageOfWorld1: ', usaPopulation, chinaPopulation, canadaPopulation);
 
-let usaPopulation2 = percentageOfWorld2(328);
-
-
-let chinaPopulation2 = percentageOfWorld2(1441);
+// let usaPopulation2 = percentageOfWorld2(328);
 
 
-let canadaPopulation2 = percentageOfWorld2(37)
+// let chinaPopulation2 = percentageOfWorld2(1441);
 
-console.log('percentageOfWorld2: ', usaPopulation2, chinaPopulation2, canadaPopulation2);
-/*
 
-    2. To calculate the percentage, divide the given 'population' value by 7900
-    and then multiply by 100.
+// let canadaPopulation2 = percentageOfWorld2(37)
 
-    3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
-    store the results into variables, and log them to the console.
+// console.log('percentageOfWorld2: ', usaPopulation2, chinaPopulation2, canadaPopulation2);
+// /*
 
-    4. Create a function expression which does the exact same thing, called
-    'percentageOfWorld2', and also call it with 3 country populations (can be
-    the same populations)
-*/
+//     2. To calculate the percentage, divide the given 'population' value by 7900
+//     and then multiply by 100.
+
+//     3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
+//     store the results into variables, and log them to the console.
+
+//     4. Create a function expression which does the exact same thing, called
+//     'percentageOfWorld2', and also call it with 3 country populations (can be
+//     the same populations)
+// */
 
 
 /*
@@ -84,17 +84,17 @@ LECTURE: Arrow Functions
 
 */
 
-const percentageOfWorld3 = population => { return (population / 7900) * 100; }
+// const percentageOfWorld3 = population => { return (population / 7900) * 100; }
 
-let usaPopulation3 = percentageOfWorld3(328);
-
-
-let chinaPopulation3 = percentageOfWorld3(1441);
+// let usaPopulation3 = percentageOfWorld3(328);
 
 
-let canadaPopulation3 = percentageOfWorld3(37);
+// let chinaPopulation3 = percentageOfWorld3(1441);
 
-console.log('percentageOfWorld3: ', usaPopulation3, chinaPopulation3, canadaPopulation3)
+
+// let canadaPopulation3 = percentageOfWorld3(37);
+
+// console.log('percentageOfWorld3: ', usaPopulation3, chinaPopulation3, canadaPopulation3)
 
 
 
@@ -110,13 +110,13 @@ LECTURE: Functions Calling Other Functions
 
     3. Call 'describePopulation' with data for 3 countries of your choice.
 */
-const describePopulation = (country, population) => {
-    console.log(`${country} has ${population} people,
-    which is about ${percentageOfWorld1(population).toFixed(2)}% of the world `)
-}
-console.log(describePopulation("The USA", 328))
-console.log(describePopulation("China", 1441))
-console.log(describePopulation("Canada", 37))
+// const describePopulation = (country, population) => {
+//     console.log(`${country} has ${population} people,
+//     which is about ${percentageOfWorld1(population).toFixed(2)}% of the world `)
+// }
+// console.log(describePopulation("The USA", 328))
+// console.log(describePopulation("China", 1441))
+// console.log(describePopulation("Canada", 37))
 
 /*
 LECTURE: Introduction to Arrays
@@ -132,19 +132,19 @@ LECTURE: Introduction to Arrays
     percentage values
 */
 
-const populations = [6, 328, 1441, 37]
-console.log('Assignment 1: Array of populations (in millions). ', populations)
+// const populations = [6, 328, 1441, 37]
+// console.log('Assignment 1: Array of populations (in millions). ', populations)
 
-console.log('Assignment 2: Does the array have for elements? ', populations.length === 4)
+// console.log('Assignment 2: Does the array have for elements? ', populations.length === 4)
 
-const percentages = [
-    percentageOfWorld1(populations[0]),
-    percentageOfWorld1(populations[1]),
-    percentageOfWorld1(populations[2]),
-    percentageOfWorld1(populations[3])
-]
+// const percentages = [
+//     percentageOfWorld1(populations[0]),
+//     percentageOfWorld1(populations[1]),
+//     percentageOfWorld1(populations[2]),
+//     percentageOfWorld1(populations[3])
+// ]
 
-console.log('Assignment 3: Population percentages. ', percentages)
+// console.log('Assignment 3: Population percentages. ', percentages)
 
 
 
@@ -167,12 +167,19 @@ LECTURE: Basic Array Operations (Methods)
     index of the country in the 'neighbours' array, and then use that index to
     change the array at that index position. For example, you can search for
     'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+    */
 
+
+/*
 LECTURE: Introduction to Objects
     1. Create an object called 'myCountry' for a country of your choice, containing
     properties 'country', 'capital', 'language', 'population' and
     'neighbours' (an array like we used in previous assignments)
+*/
 
+
+
+/*
 LECTURE: Dot vs. Bracket Notation
     1. Using the object from the previous assignment, log a string like this to the
     console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries
@@ -180,7 +187,11 @@ LECTURE: Dot vs. Bracket Notation
 
     2. Increase the country's population by two million using dot notation, and then
     decrease it by two million using brackets notation.
+*/
 
+
+
+/*
 LECTURE: Object Methods
     1. Add a method called 'describe' to the 'myCountry' object. This method
     will log a string to the console, similar to the string logged in the previous
@@ -192,12 +203,20 @@ LECTURE: Object Methods
     method will set a new property on the object, called 'isIsland'.
     'isIsland' will be true if there are no neighbouring countries, and false if
     there are. Use the ternary operator to set the property.
+*/
 
+
+
+
+/*
 LECTURE: Iteration: The for Loop
     1. There are elections in your country! In a small town, there are only 50 voters.
     Use a for loop to simulate the 50 people voting, by logging a string like this to
     the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+*/
 
+
+/*
 LECTURE: Looping Arrays, Breaking and Continuing
     1. Let's bring back the 'populations' array from a previous assignment.
 
@@ -208,7 +227,12 @@ LECTURE: Looping Arrays, Breaking and Continuing
     3. Confirm that 'percentages2' contains exactly the same values as the
     'percentages' array that we created manually in the previous assignment,
     and reflect on how much better this solution is.
+*/
 
+
+
+
+/*
 LECTURE: Looping Backwards and Loops in Loops
     1. Store this array of arrays into a variable called 'listOfNeighbours'
     [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
@@ -219,7 +243,11 @@ LECTURE: Looping Backwards and Loops in Loops
 
     3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
     worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+*/
 
+
+
+/*
 LECTURE: The while Loop
     1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
     but this time using a while loop (call the array 'percentages3')

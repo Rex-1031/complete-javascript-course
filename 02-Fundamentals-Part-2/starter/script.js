@@ -250,13 +250,13 @@ const steve = {
     }
 }
 
-console.log(steve.calcAge())
-console.log(steve.age)
+// console.log(steve.calcAge())
+// console.log(steve.age)
 
 //Challenge
 //'Steve is a 38 year old Electionic Technician, and he as/does not have  a driver's license'
 
-console.log(steve.getSummary())
+// console.log(steve.getSummary())
 
 
 // LECTURE: Iteration: The for Loop

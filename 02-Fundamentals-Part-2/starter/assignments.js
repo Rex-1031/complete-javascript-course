@@ -200,7 +200,7 @@ LECTURE: Introduction to Objects
             neighbours: ['Canada', 'Mexico']
         }
 
-        console.log('Intro to Objects 1: ', myCountry)
+        // console.log('Intro to Objects 1: ', myCountry)
 
 
 
@@ -218,17 +218,17 @@ LECTURE: Dot vs. Bracket Notation
 */
 
 
-console.log(`Dot vs. Bracket Notation 1:
-${myCountry.country} has ${myCountry.populationInMillions} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.
+// console.log(`Dot vs. Bracket Notation 1:
+// ${myCountry.country} has ${myCountry.populationInMillions} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.
 
-`)
+// `)
 
         myCountry.populationInMillions = 384;
-        console.log('Dot vs. Bracket Notation 2a: ', myCountry);
+        // console.log('Dot vs. Bracket Notation 2a: ', myCountry);
 
         myCountry['populationInMillions'] = 382;
 
-        console.log('Dot vs. Bracket Notation 2b: ', myCountry);
+        // console.log('Dot vs. Bracket Notation 2b: ', myCountry);
 
     /*
 LECTURE: Object Methods
@@ -247,8 +247,8 @@ LECTURE: Object Methods
             return `${this.country} has ${this.populationInMillions} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
         }
 
-        console.log('Object Methods 1: ', myCountry);
-        console.log('Object Methods 2: ', myCountry.describe);
+        // console.log('Object Methods 1: ', myCountry);
+        // console.log('Object Methods 2: ', myCountry.describe);
 
 /*
 LECTURE: Iteration: The for Loop

@@ -99,6 +99,7 @@ Your tasks:
 1. For each of them, create an object with properties for their full name, mass, and
 height (Mark Miller and John Smith)
 
+
 2. Create a 'calcBMI' method on each object to calculate the BMI (the same
 method on both objects). Store the BMI value to a property, and also return it
 from the method
@@ -107,9 +108,35 @@ from the method
 respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall.
+*/
+
+    let markData = {
+        firstName: 'Mark',
+        lastName: 'Miller',
+        massInKg: 78,
+        heightInMeters: 1.69,
+        BMI: calcBMI(),
+        calcBMI: function(){
+            this.BMI = this.massInKg  / this.heightInMeters**2;
+            return this.BMI;
+        }
+        
+    }
 
 
+    
+    let johnData = {
+        firstName: 'John',
+        lastName: 'Smith',
+        massInKg: 92,
+        heightInMeters: 1.92,
+    }
+console.log('Coding Challenge 3-1: ', markData, johnData)
 
+
+    console.log('Coding Challenge 3-2: ', markData);
+
+/*
 Coding Challenge #4
 Let's improve Steven's tip calculator even more, this time using loops!
 Your tasks:

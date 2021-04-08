@@ -62,18 +62,18 @@ LECTURE: Function Declarations vs. Expressions
 // let canadaPopulation2 = percentageOfWorld2(37)
 
 // console.log('percentageOfWorld2: ', usaPopulation2, chinaPopulation2, canadaPopulation2);
-/*
+// /*
 
-    2. To calculate the percentage, divide the given 'population' value by 7900
-    and then multiply by 100.
+//     2. To calculate the percentage, divide the given 'population' value by 7900
+//     and then multiply by 100.
 
-    3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
-    store the results into variables, and log them to the console.
+//     3. Call 'percentageOfWorld1' for 3 populations of countries of your choice,
+//     store the results into variables, and log them to the console.
 
-    4. Create a function expression which does the exact same thing, called
-    'percentageOfWorld2', and also call it with 3 country populations (can be
-    the same populations)
-*/
+//     4. Create a function expression which does the exact same thing, called
+//     'percentageOfWorld2', and also call it with 3 country populations (can be
+//     the same populations)
+// */
 
 
 /*
@@ -167,24 +167,8 @@ LECTURE: Basic Array Operations (Methods)
     index of the country in the 'neighbours' array, and then use that index to
     change the array at that index position. For example, you can search for
     'Sweden' in the array, and then replace it with 'Republic of Sweden'.
-*/
+    */
 
-    // let neighbours = ['Canada', 'Mexico'];
-
-    // console.log('Array Methods 1: ', neighbours);
-
-    // neighbours.push('Utopia');
-
-    // console.log('Array Methods 2: ', neighbours);
-
-    // neighbours.pop();
-    // console.log('Array Methods 3: ', neighbours);
-    
-    // console.log('Array Methods 4: ')
-    // neighbours.includes('Germany')? console.log('A central European Country.'): console.log('Probably not a central European country.')
-
-    // neighbours[0] = 'The Commonwealth of Cananda'
-    // console.log('Array Methods 5: ', neighbours);
 
 /*
 LECTURE: Introduction to Objects
@@ -192,18 +176,6 @@ LECTURE: Introduction to Objects
     properties 'country', 'capital', 'language', 'population' and
     'neighbours' (an array like we used in previous assignments)
 */
-        let myCountry = {
-            country: 'The Unites States of America',
-            capital: 'Washington D.C.',
-            language: 'English',
-            populationInMillions: 382,
-            neighbours: ['Canada', 'Mexico']
-        }
-
-        console.log('Intro to Objects 1: ', myCountry)
-
-
-
 
 
 
@@ -255,7 +227,10 @@ LECTURE: Iteration: The for Loop
     1. There are elections in your country! In a small town, there are only 50 voters.
     Use a for loop to simulate the 50 people voting, by logging a string like this to
     the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+*/
 
+
+/*
 LECTURE: Looping Arrays, Breaking and Continuing
     1. Let's bring back the 'populations' array from a previous assignment.
 
@@ -266,7 +241,12 @@ LECTURE: Looping Arrays, Breaking and Continuing
     3. Confirm that 'percentages2' contains exactly the same values as the
     'percentages' array that we created manually in the previous assignment,
     and reflect on how much better this solution is.
+*/
 
+
+
+
+/*
 LECTURE: Looping Backwards and Loops in Loops
     1. Store this array of arrays into a variable called 'listOfNeighbours'
     [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
@@ -277,7 +257,11 @@ LECTURE: Looping Backwards and Loops in Loops
 
     3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
     worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+*/
 
+
+
+/*
 LECTURE: The while Loop
     1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
     but this time using a while loop (call the array 'percentages3')

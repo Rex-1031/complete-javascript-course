@@ -7,14 +7,14 @@ one average score per team).
 A team only wins if it has at least double the average score of the other team.
 Otherwise, no team wins! */
 
-// Your tasks:
-// 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+// // Your tasks:
+// // 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 
 // const calcAverage = (score1, score2, score3) => {
 //     return (score1 + score2 + score3) / 3
 // }
 
-// 2. Use the function to calculate the average for both teams
+// // 2. Use the function to calculate the average for both teams
 
 // let dolphinAv = calcAverage(44, 23, 71);
 // let koalaAv = calcAverage(65, 54, 49);
@@ -81,8 +81,12 @@ the bill if the bill value is between 50 and 300, and if the value is different,
 
 // const calcTip = (bill) => { (bill >= 50 && bill <= 300) ? bill * .15 : bill * .20 }
 
+// let tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
+// let total = [(tips[0] + bills[0]), (tips[1] + bills[1]), (tips[2] + bills[2])];
 
+// console.log(tips);
+// console.log(total);
 
 
 /*

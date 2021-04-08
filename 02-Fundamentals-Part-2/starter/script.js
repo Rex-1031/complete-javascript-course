@@ -146,33 +146,33 @@
 
 // LECTURE: Basic Array Operations (Methods)
 
-const friends = ['Kitty', 'Brandi', 'Sam'];
-console.log(friends)
-//ADD ELEMENTS
-friends.push('Nick');
+// const friends = ['Kitty', 'Brandi', 'Sam'];
+// console.log(friends)
+// //ADD ELEMENTS
+// friends.push('Nick');
 
 
-console.log(friends)
+// console.log(friends)
 
 
-friends.unshift('Ty');
-console.log(friends)
+// friends.unshift('Ty');
+// console.log(friends)
 
-//REMOVE ELEMENTS
+// //REMOVE ELEMENTS
 
-friends.pop();
-friends.pop();
+// friends.pop();
+// friends.pop();
 
-console.log(friends)
+// console.log(friends)
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
 
-console.log(friends.indexOf('Kitty'))
+// console.log(friends.indexOf('Kitty'))
 
-console.log(friends.includes('Kitty'));
-console.log(friends.includes('Nick'))
+// console.log(friends.includes('Kitty'));
+// console.log(friends.includes('Nick'))
 
 
 

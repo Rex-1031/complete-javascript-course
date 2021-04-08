@@ -10,16 +10,16 @@ Otherwise, no team wins! */
 // Your tasks:
 // 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 
-const calcAverage = (score1, score2, score3) => {
-    return (score1 + score2 + score3) / 3
-}
+// const calcAverage = (score1, score2, score3) => {
+//     return (score1 + score2 + score3) / 3
+// }
 
 // 2. Use the function to calculate the average for both teams
 
-let dolphinAv = calcAverage(44, 23, 71);
-let koalaAv = calcAverage(65, 54, 49);
-let dolphinAv2 = calcAverage(85, 54, 41);
-let koalaAv2 = calcAverage(23, 34, 27);
+// let dolphinAv = calcAverage(44, 23, 71);
+// let koalaAv = calcAverage(65, 54, 49);
+// let dolphinAv2 = calcAverage(85, 54, 41);
+// let koalaAv2 = calcAverage(23, 34, 27);
 
 
 
@@ -28,18 +28,18 @@ let koalaAv2 = calcAverage(23, 34, 27);
 // to the console, together with the victory points, according to the rule above.
 // Example: "Koalas win (30 vs. 13)"
 
-function checkWinner(avgDolphins, avgKoalas) {
-    if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
-    } else if (avgKoalas >= 2 * avgDolphins) {
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`)
-    } else {
-        console.log('No Winner');
-    }
-}
+// function checkWinner(avgDolphins, avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`)
+//     } else if (avgKoalas >= 2 * avgDolphins) {
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`)
+//     } else {
+//         console.log('No Winner');
+//     }
+// }
 
-console.log(checkWinner(dolphinAv, koalaAv));
-console.log(checkWinner(dolphinAv2, koalaAv2));
+// console.log(checkWinner(dolphinAv, koalaAv));
+// console.log(checkWinner(dolphinAv2, koalaAv2));
 // 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
 // Data 2
 
@@ -79,7 +79,7 @@ the bill if the bill value is between 50 and 300, and if the value is different,
 // values (so don't store the tip values in separate variables first, but right in the new
 // array) 😉
 
-const calcTip = (bill) => { (bill >= 50 && bill <= 300) ? bill * .15 : bill * .20 }
+// const calcTip = (bill) => { (bill >= 50 && bill <= 300) ? bill * .15 : bill * .20 }
 
 
 

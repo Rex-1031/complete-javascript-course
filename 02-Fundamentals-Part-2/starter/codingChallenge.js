@@ -113,9 +113,8 @@ tall.
     let markData = {
         firstName: 'Mark',
         lastName: 'Miller',
-        massInKg: 78,
-        heightInMeters: 1.69,
-        BMI: calcBMI(),
+        massInKg: 92,
+        heightInMeters: 1.95,
         calcBMI: function(){
             this.BMI = this.massInKg  / this.heightInMeters**2;
             return this.BMI;
@@ -128,14 +127,28 @@ tall.
     let johnData = {
         firstName: 'John',
         lastName: 'Smith',
-        massInKg: 92,
-        heightInMeters: 1.92,
+        massInKg: 78,
+        heightInMeters: 1.69,
+        calcBMI: function(){
+            this.BMI = this.massInKg  / this.heightInMeters**2;
+            return this.BMI;
+        }
     }
 console.log('Coding Challenge 3-1: ', markData, johnData)
 
+markData.calcBMI();
+johnData.calcBMI();
 
-    console.log('Coding Challenge 3-2: ', markData);
+    console.log('Coding Challenge 3-2: ', 'Marks BMI: ', markData.BMI, 'Johns BMI',johnData.BMI);
+    console.log('Coding Challenge 3-3: ')
 
+   markData.BMI > johnData.BMI ? 
+    console.log(`${markData.firstName}'s BMI (${Math.round(markData.BMI)}) is higher than ${johnData.firstName}'s (${Math.round(johnData.BMI)})!`)
+    : console.log(`${johnData.firstName}'s BMI (${Math.round(johnData.BMI)}) is higher than ${markData.firstName}'s (${Math.round(markData.BMI)})!`)
+
+
+
+    
 /*
 Coding Challenge #4
 Let's improve Steven's tip calculator even more, this time using loops!

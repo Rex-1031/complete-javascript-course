@@ -35,9 +35,9 @@ LECTURE: Function Declarations vs. Expressions
     the world population.
 */
 
-// function percentageOfWorld1(population) {
-//     return (population / 7900) * 100;
-// }
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+}
 
 // const percentageOfWorld2 = function (population) {
 //     return (population / 7900) * 100;
@@ -275,7 +275,24 @@ LECTURE: Looping Arrays, Breaking and Continuing
     3. Confirm that 'percentages2' contains exactly the same values as the
     'percentages' array that we created manually in the previous assignment,
     and reflect on how much better this solution is.
+*/
+const populations = [6, 328, 1441, 37];
 
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+
+    const perc = percentageOfWorld1(populations[i]).toFixed(2);
+
+    percentages2.push(perc);
+
+}
+
+console.log('Assignment: Looping Arrays ', percentages2);
+
+
+
+/*
 LECTURE: Looping Backwards and Loops in Loops
     1. Store this array of arrays into a variable called 'listOfNeighbours'
     [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
@@ -286,7 +303,19 @@ LECTURE: Looping Backwards and Loops in Loops
 
     3. You will need a loop inside a loop for this. This is actually a bit tricky, so don't
     worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+*/
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+    'Russia']];
 
+
+for (let i = 0; i < listOfNeighbours.length; i++)
+    for (let j = 0; j < listOfNeighbours[i].length; j++)
+        console.log(`Neighbor: ${listOfNeighbours[i][j]}`);
+
+
+
+
+/*
 LECTURE: The while Loop
     1. Recreate the challenge from the lecture 'Looping Arrays, Breaking and Continuing',
     but this time using a while loop (call the array 'percentages3')
@@ -294,3 +323,16 @@ LECTURE: The while Loop
     2. Reflect on what solution you like better for this task: the for loop or the while
     loop?
 */
+
+const percentages3 = [];
+
+let i = 0;
+
+while (i < populations.length) {
+    const perc = percentageOfWorld1(populations[i]).toFixed(2)
+    percentages3.push(perc);
+    i++
+}
+console.log('The While Loop: ', percentages3);
+
+

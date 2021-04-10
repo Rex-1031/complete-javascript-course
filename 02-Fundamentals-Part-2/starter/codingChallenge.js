@@ -172,3 +172,17 @@ length of the array (because that's the number of elements)
 
 
 */
+
+const bills = [100, 300, 500, 250, 111, 80, 62, 332, 505, 56];
+const tips = [];
+const totals = [];
+
+console.log(`Coding Challenge #4:
+4-1: 
+Bills Array: ${bills}
+Array Length: ${bills.length}`)
+
+
+
+
+

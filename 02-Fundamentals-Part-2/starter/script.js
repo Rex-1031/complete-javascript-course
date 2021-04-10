@@ -240,15 +240,15 @@ const steve = {
     //     return this.currentYear - this.birthYear;
     // }
 
-    calcAge: function () {
-        this.age = 2021 - this.birthYear;
-        return this.age;
-    },
+    // calcAge: function () {
+    //     this.age = 2021 - this.birthYear;
+    //     return this.age;
+    // },
 
-    getSummary: function () {
-        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he ${this.hasDriversLicense === true ? `has` : `does not have`} a driver's license.`
-    }
+    // getSummary: function () {
+    //     return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he ${this.hasDriversLicense === true ? `has` : `does not have`} a driver's license.`
 }
+// }
 
 // console.log(steve.calcAge())
 // console.log(steve.age)
@@ -260,10 +260,113 @@ const steve = {
 
 
 // LECTURE: Iteration: The for Loop
+// console.log('Lifting weight rep 1.')
+
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weight rep ${rep}.`)
+
+// }
+
+
+
 
 // LECTURE: Looping Arrays, Breaking and Continuing
+const steveC = [
+    'Steve',
+    'Clair',
+    2021 - 1983,
+    'Electronic Techncian',
+    ['Kitty', 'Sam', 'Brandi'],
+    true
+]
+
+
+
+const type = [];
+
+
+
+// for (let i = 0; i < steveC.length; i++) {
+//     console.log(steveC[i], typeof steveC[i])
+
+//     //filling an array (type)
+//     // type[i] = typeof steveC[i]
+
+//     type.push(typeof steveC[i]);
+
+// }
+// console.log('types: ', type);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2020 - years[i]);
+
+}
+
+// console.log(ages);
+
+
+//Continue and Break
+// console.log('---ONLY STRINGS---')
+for (let i = 0; i < steveC.length; i++) {
+
+    if (typeof steveC[i] !== 'string') continue;
+
+    // console.log(steveC[i], typeof steveC[i])
+}
+
+// console.log('---BREAK WITH NUMBER---')
+for (let i = 0; i < steveC.length; i++) {
+
+    if (typeof steveC[i] !== '') continue;
+
+    // console.log(steveC[i], typeof steveC[i])
+}
+
 
 // LECTURE: Looping Backwards and Loops in Loops
+
+
+//Looping Backwards
+for (let i = steveC.length - 1; i >= 0; i--) {
+    console.log(i, steveC[i])
+}
+
+//Loops in Loops
+
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----Starting Exercise ${exercise}----`);
+
+    for (let reps = 1; reps < 6; reps++) {
+        console.log(`Lifting weight repetition: ${reps}`)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // LECTURE: The while Loop

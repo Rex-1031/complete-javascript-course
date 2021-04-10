@@ -169,22 +169,22 @@ LECTURE: Basic Array Operations (Methods)
     'Sweden' in the array, and then replace it with 'Republic of Sweden'.
 */
 
-    // let neighbours = ['Canada', 'Mexico'];
+// let neighbours = ['Canada', 'Mexico'];
 
-    // console.log('Array Methods 1: ', neighbours);
+// console.log('Array Methods 1: ', neighbours);
 
-    // neighbours.push('Utopia');
+// neighbours.push('Utopia');
 
-    // console.log('Array Methods 2: ', neighbours);
+// console.log('Array Methods 2: ', neighbours);
 
-    // neighbours.pop();
-    // console.log('Array Methods 3: ', neighbours);
-    
-    // console.log('Array Methods 4: ')
-    // neighbours.includes('Germany')? console.log('A central European Country.'): console.log('Probably not a central European country.')
+// neighbours.pop();
+// console.log('Array Methods 3: ', neighbours);
 
-    // neighbours[0] = 'The Commonwealth of Cananda'
-    // console.log('Array Methods 5: ', neighbours);
+// console.log('Array Methods 4: ')
+// neighbours.includes('Germany')? console.log('A central European Country.'): console.log('Probably not a central European country.')
+
+// neighbours[0] = 'The Commonwealth of Cananda'
+// console.log('Array Methods 5: ', neighbours);
 
 /*
 LECTURE: Introduction to Objects
@@ -192,15 +192,15 @@ LECTURE: Introduction to Objects
     properties 'country', 'capital', 'language', 'population' and
     'neighbours' (an array like we used in previous assignments)
 */
-        let myCountry = {
-            country: 'The Unites States of America',
-            capital: 'Washington D.C.',
-            language: 'English',
-            populationInMillions: 382,
-            neighbours: ['Canada', 'Mexico']
-        }
+let myCountry = {
+    country: 'The Unites States of America',
+    capital: 'Washington D.C.',
+    language: 'English',
+    populationInMillions: 382,
+    neighbours: ['Canada', 'Mexico']
+}
 
-        // console.log('Intro to Objects 1: ', myCountry)
+// console.log('Intro to Objects 1: ', myCountry)
 
 
 
@@ -223,45 +223,54 @@ LECTURE: Dot vs. Bracket Notation
 
 // `)
 
-        myCountry.populationInMillions = 384;
-        // console.log('Dot vs. Bracket Notation 2a: ', myCountry);
+myCountry.populationInMillions = 384;
+// console.log('Dot vs. Bracket Notation 2a: ', myCountry);
 
-        myCountry['populationInMillions'] = 382;
+myCountry['populationInMillions'] = 382;
 
-        // console.log('Dot vs. Bracket Notation 2b: ', myCountry);
+// console.log('Dot vs. Bracket Notation 2b: ', myCountry);
 
-    /*
+/*
 LECTURE: Object Methods
-    1. Add a method called 'describe' to the 'myCountry' object. This method
-    will log a string to the console, similar to the string logged in the previous
-    assignment, but this time using the 'this' keyword.
+1. Add a method called 'describe' to the 'myCountry' object. This method
+will log a string to the console, similar to the string logged in the previous
+assignment, but this time using the 'this' keyword.
 
-    2. Call the 'describe' method.
+2. Call the 'describe' method.
 
-    3. Add a method called 'checkIsland' to the 'myCountry' object. This
-    method will set a new property on the object, called 'isIsland'.
-    'isIsland' will be true if there are no neighbouring countries, and false if
-    there are. Use the ternary operator to set the property.
+3. Add a method called 'checkIsland' to the 'myCountry' object. This
+method will set a new property on the object, called 'isIsland'.
+'isIsland' will be true if there are no neighbouring countries, and false if
+there are. Use the ternary operator to set the property.
 */
-        myCountry.describe = function (){
-            return `${this.country} has ${this.populationInMillions} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
-        }
+// myCountry.describe = function (){
+//     return `${this.country} has ${this.populationInMillions} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+// }
 
-        // console.log('Object Methods 1: ', myCountry);
-        // console.log('Object Methods 2: ', myCountry.describe);
+// console.log('Object Methods 1: ', myCountry);
+// console.log('Object Methods 2: ', myCountry.describe);
 
 /*
 LECTURE: Iteration: The for Loop
     1. There are elections in your country! In a small town, there are only 50 voters.
     Use a for loop to simulate the 50 people voting, by logging a string like this to
     the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+*/
 
+// for (let voters = 1; voters <= 50; voters++) {
+//     console.log(`Voter number ${voters} is currently voting`);
+// }
+
+
+
+
+/*
 LECTURE: Looping Arrays, Breaking and Continuing
     1. Let's bring back the 'populations' array from a previous assignment.
 
     2. Use a for loop to compute an array called 'percentages2' containing the
     percentages of the world population for the 4 population values. Use the
-    function 'percentageOfWorld1' that you created earlier.
+ function 'percentageOfWorld1' that you created earlier.
 
     3. Confirm that 'percentages2' contains exactly the same values as the
     'percentages' array that we created manually in the previous assignment,

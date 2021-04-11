@@ -173,16 +173,55 @@ length of the array (because that's the number of elements)
 
 */
 
-const bills = [100, 300, 500, 250, 111, 80, 62, 332, 505, 56];
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
+
+const calcTip = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+
+
+for (let i = 0; i < bills.length; i++) {
+    const tipArr = calcTip(bills[i]);
+    const totalArr = tipArr + bills[i];
+    tips.push(tipArr)
+    totals.push(totalArr)
+}
+
+
 
 console.log(`Coding Challenge #4:
 4-1: 
 Bills Array: ${bills}
-Array Length: ${bills.length}`)
+Array Length: ${bills.length}
 
+4-3:
+Tips:
+${tips}
 
+Bill Total:
+${totals}
+`)
 
+const avArr = [1, 2, 3, 4, 5];
+const calcAverage = arr => {
+    let sum = 0;
 
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
 
+    }
+    return sum / arr.length;
+
+}
+
+console.log(`Coding Challenge 4: Bonus:
+    avArr Array:
+    ${calcAverage(avArr)}
+
+    tips Array:
+    ${calcAverage(tips)}
+
+    totals Array:
+    ${calcAverage(totals)}
+
+`)
